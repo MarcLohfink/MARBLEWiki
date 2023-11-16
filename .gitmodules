@@ -1,0 +1,4 @@
+[submodule "ext/MARBLE.wiki"]
+	path = ext/MARBLE.wiki
+	url = https://github.com/FUSEEProjectTeam/MARBLE.wiki.git
+	branch = main
