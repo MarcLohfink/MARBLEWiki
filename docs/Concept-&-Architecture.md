@@ -1,4 +1,4 @@
-#Concept & Architecture
+# Concept & Architecture
 
 In order to use the Creator as it is intended, it is useful to understand the basics about the concept and architecture of the software.
 
