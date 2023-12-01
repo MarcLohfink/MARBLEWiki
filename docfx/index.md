@@ -2,10 +2,13 @@
 _layout: landing
 ---
 
-# This is the **HOMEPAGE**.
-
-Refer to [Markdown](http://daringfireball.net/projects/markdown/) for how to write markdown files.
-
-## Quick Start Notes:
-
-1. Add images to the *images* folder if the file is referencing an image.
+<html xmlns="http://www.w3.org/1999/xhtml">    
+  <head>      
+    <title>MARBLE Wiki</title>      
+    <meta http-equiv="refresh" content="0;URL='wiki/home.html" />    
+  </head>    
+  <body> 
+    <p>Redirect to <a href="wiki/home.html">
+      Home</a>.</p> 
+  </body>  
+</html>  

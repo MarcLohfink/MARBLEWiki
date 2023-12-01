@@ -3,7 +3,7 @@
 {
     /* General */
     --main-bg-color: #36393f;
-    --footer-bg-color: rgba(0,0,0,.4);
+    --footer-bg-color: rgba(0,132,77,255);
     --table-strip-bg-color: #121315;
     --table-header-bg-color: #202225;;
     --table-header-color: hsla(0,0%,100%,.8);
@@ -11,8 +11,8 @@
 
     /* Text */
     --text-color: #dcddde;
-    --link-color: #00b0f4;
-    --link-hover-color: #4bd5ff;
+    --link-color: #00844D;
+    --link-hover-color: #83B81A;
     --link-active-color: #fff;
     --link-active-bg-color: #5468ff;
     --h3-color: #ffffff85;
@@ -23,7 +23,7 @@
     --topbar-bg-color: #18191c;
     
     /* Button */
-    --button-color: #747f8d;
+    --button-color: #83B81A;
 
     /* Sidebar */
     --separator-color: #4f545c;
@@ -34,7 +34,7 @@
 
     /* Scrollbar */
     --scrollbar-bg-color: transparent;
-    --scrollbar-thumb-bg-color: rgba(0,0,0,.4);
+    --scrollbar-thumb-bg-color: rgba(0,132,77,255);
     --scrollbar-thumb-border-color: transparent;
 
     /* Alerts and Blocks */
