@@ -116,15 +116,106 @@ if(window.location.pathname === '/home.html')
                         </div>
 
                     <article class="content wrap" id="_content" data-uid="">
-<h1 id="visual-studio">Visual Studio</h1>
 
+<p>MARBLE and the current version are experimental research versions. There is no guarantee that they will properly work and may cause a lot of troubleshooting to get it to work. MARBLE depends on a lot of settings, plugins and third party libraries. The following guide will lead you through the most important installation steps. The core of the MARBLE app is the current package »<em>marble_mordor_1.0.0</em>« which you have to <a href="mailto:marc-alexander.lohfink@hfu.eu">request from the author</a>.
+If you have access to the unity package, follow this guide (chronologically) to run MARBLE on your machine.</p>
+<h1 id="visual-studio">Visual Studio</h1>
 <p>To properly deploy new app versions you need to follow the instructions from: <a href="https://learn.microsoft.com/en-us/windows/mixed-reality/develop/install-the-tools#installation-checklist">Microsoft Learn - Mixed Reality</a>.</p>
 <h1 id="unity">Unity</h1>
 <h2 id="version">Version</h2>
 <p>MARBLE runs on 2020.3.13f1. Make sure to also install the UWP module.</p>
+<h2 id="packages">Packages</h2>
+<p>The latest version of MARBLE may not require all of the following packages. To enable better troubleshooting, they are listed below:</p>
+<ul>
+<li>Editor Coroutines 1.0.0</li>
+<li>OpenXR Plugin 1.3.1</li>
+<li>TextMeshPro 3.0.6</li>
+<li>Windows XR Plugin 4.5.0</li>
+<li>XR Plugin Management 4.2.1</li>
+</ul>
+<h2 id="mixed-reality-toolkit">Mixed Reality Toolkit</h2>
+<p>MARBLE was developed with MRTK 2.7.3. Make sure to have the following packages:</p>
+<h3 id="mrtk-dependencies">MRTK Dependencies</h3>
+<ul>
+<li>Mixed Reality Toolkit Examples 2.7.3</li>
+<li>Mixed Reality Toolkit Extensions 2.7.3</li>
+<li>Mixed Reality Toolkit Foundation 2.7.3</li>
+<li>Mixed Reality Toolkit Standard Assets 2.7.3</li>
+<li>Mixed Reality Toolkit Tools 2.7.3</li>
+</ul>
+<p>Platform Support</p>
+<ul>
+<li>Mixed Reality OpenXR Plugin 1.3.1</li>
+<li>Mixed Reality Scene Understanding 0.6.0</li>
+</ul>
+<p>World Locking Tools</p>
+<ul>
+<li>WLT Samples 1.5.8</li>
+<li>WLT Core 1.5.8</li>
+</ul>
+<h3 id="mrtk-install">MRTK Install</h3>
+<p>You will probably have to setup MRTK after adding the packages. Use the following options:</p>
+<ul>
+<li>Unity OpenXR plugin (recommended)</li>
+<li>Next resolve all problems. As the &quot;Interaction Profile&quot; select &quot;Eye Gaze Interaction Profile&quot; and &quot;Microsoft Hand Interaction Profile&quot;.</li>
+<li>Click &quot;Apply Settings&quot; and then &quot;Next&quot;</li>
+<li>Make sure everything is selected. Click &quot;Apply&quot; and with this restart the editor.</li>
+<li>Head to Mixed Reality &gt; Toolkit &gt; Utilities &gt; Configure Project for MRTK to reopen the MRTK setup window</li>
+<li>Import the TMP Essentials</li>
+<li>Got it, next</li>
+<li>Done</li>
+</ul>
+<h2 id="mirror-api">Mirror API</h2>
+<p>MARBLE uses the <a href="https://mirror-networking.com/">Mirror-API</a>. It uses the 57.0.0 version.</p>
+<h2 id="build-settings">Build Settings</h2>
+<p>The build settings are only mandatory if you want to build new app versions. If you just want to run MARBLE as Creator skip this.
+Head to File &gt; Build Settings
+Make user that your target platform is &quot;Universial Windows Platform&quot;.</p>
+<ul>
+<li>Archtiecture: ARM64</li>
+<li>Build Type: D3D Project</li>
+<li>Target SDK Version: 10.0.22621.0</li>
+<li>Minimum Platform Version: 10.0.10240.0</li>
+</ul>
 <h2 id="scene">Scene</h2>
 <p>The main scene of MARBLE is the &quot;HoloLens2Setup&quot; scene. Make sure that this scene is the first scene executed (File &gt; Build Settings &gt; Scenes in Build).
-You need at least the following three scenes at their indices: Scenes/Setup at 1, Scenes/ShowcaseRoom/ShowcaseRoom at 3 andScenes/ShowcaseRoom/MainMenu_NoUpdater at 8.</p>
+You need at least the following three scenes at their indices:</p>
+<ul>
+<li>Scenes/Setup at 1,</li>
+<li>Scenes/ShowcaseRoom/ShowcaseRoom at 3 and</li>
+<li>Scenes/ShowcaseRoom/MainMenu_NoUpdater at 8.</li>
+</ul>
+<h2 id="tags--layers">Tags &amp; Layers</h2>
+<p>As Unity does not export tags and layers you have to add the folloing order of tags and layers. Therefore head to Edit &gt; Project Settings &gt; Tags and Layers.
+Tags:</p>
+<ul>
+<li>DirectionalLight</li>
+<li>DirectionalLightReceiver
+Layers:</li>
+<li>Default</li>
+<li>TransparentFX</li>
+<li>Ignore Raycast</li>
+<li><em>leave it empty</em></li>
+<li>Water</li>
+<li>UI</li>
+<li>Model</li>
+<li>MainDirectionalLight</li>
+<li>WorldUI</li>
+<li>MsgTool</li>
+<li>EventBox</li>
+<li>CaputreArea</li>
+<li>DraggableBox</li>
+<li>PopupPin</li>
+<li>ModelNoTouch</li>
+<li>IgnoreLayering</li>
+<li><em>Skip the next until User Layer 31</em> &gt; Spatial Awareness</li>
+</ul>
+<h1 id="whats-next">What´s Next?</h1>
+<ul>
+<li><a href="Creator-Overview">Get an overview of the MARBLE CREATOR</a></li>
+<li><a href="Getting-Started">Getting Started</a></li>
+<li><a href="Quick-Fix-&amp;-Workarounds">Read the Quick Fix &amp; Workarounds</a></li>
+</ul>
 
 </article>
               

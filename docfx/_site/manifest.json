@@ -50,11 +50,40 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "wiki/AboutMARBLE/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/AboutMARBLE/toc.html"
+        },
+        ".json": {
+          "relative_path": "wiki/AboutMARBLE/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "wiki/Concept-&-Architecture.md",
       "output": {
         ".html": {
           "relative_path": "wiki/Concept-&-Architecture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Concept.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Concept.html"
         }
       },
       "version": ""
@@ -195,16 +224,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "wiki/Model-Databases.md",
-      "output": {
-        ".html": {
-          "relative_path": "wiki/Model-Databases.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "wiki/Quick-Fix-&-Workarounds.md",
       "output": {
         ".html": {
@@ -234,6 +253,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "wiki/_Sidebar.md",
       "output": {
