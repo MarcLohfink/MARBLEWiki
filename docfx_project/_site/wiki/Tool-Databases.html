@@ -118,14 +118,14 @@ if(window.location.pathname === '/home.html')
                     <article class="content wrap" id="_content" data-uid="">
 
 <p>A tool database is a list holding all tools which should be available during a session.
-Basically you can add as many tools as you want but be aware that this can cause long export times and also lead to memory exceptions.</p>
+Basically you can add as many tools as you want, but be aware that this can cause long export times and also lead to memory exceptions.</p>
 <h2 id="navigation">Navigation</h2>
 <p>Via &quot;Edit MARBLE Project&quot; &gt; &quot;Edit ToolDB&quot; the model database of the currently selected project can be edited.
 <img src="https://user-images.githubusercontent.com/77617650/232829477-49bc5fa8-2e73-453d-9fbf-3e6b37889a95.png" alt="grafik"></p>
 <h2 id="add--remove-tools">Add &amp; Remove Tools</h2>
 <p>Currently, adding tools is implemented, but not supported in a user-friendly manner.
-In order to add a new tool, you have to create a new tool by deriving a new prefab from the &quot;TB_Tool_grabbable_network&quot; and one from &quot;TB_Tool_grabbable&quot;. In prefab mode you have to add the desired model and functionality to both prefabs! After this process you can add a new tool to the tool database and reference the derived &quot;TB_Tool_grabbable&quot; in the &quot;Offline Tool&quot; field and the derived &quot;TB_Tool_grabbable_network&quot; in the &quot;Online Tool&quot; field.
-Further you have to find the &quot;MARBLE_NetworkManager&quot; in the project panel, which controls the network session at runtime. Add the online representative of the new tool to the &quot;Registered Spawnable Prefabs&quot; list. Finally, add the position of the new tool in the &quot;Registered Spawnable Prefabs&quot; list (starting at 0) to the newly added tool in the tool database under &quot;Net Manager Id&quot;.
+In order to add a new tool, you have to create a new tool by deriving a new prefab from the &quot;TB_Tool_grabbable_network&quot; and one from &quot;TB_Tool_grabbable&quot;. In prefab mode, you have to add the desired model and functionality to both prefabs! After this process, you can add a new tool to the tool database and reference the derived &quot;TB_Tool_grabbable&quot; in the &quot;Offline Tool&quot; field and the derived &quot;TB_Tool_grabbable_network&quot; in the &quot;Online Tool&quot; field.
+Further, you have to find the &quot;MARBLE_NetworkManager&quot; in the project panel, which controls the network session at runtime. Add the online representative of the new tool to the &quot;Registered Spawnable Prefabs&quot; list. Finally, add the position of the new tool in the &quot;Registered Spawnable Prefabs&quot; list (starting at 0) to the newly added tool in the tool database under &quot;Net Manager Id&quot;.
 <img src="https://user-images.githubusercontent.com/77617650/232827111-ee9fd7af-b76a-4b70-8220-dae0d9987d45.png" alt="grafik"></p>
 
 </article>

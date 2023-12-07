@@ -120,23 +120,23 @@ if(window.location.pathname === '/home.html')
 <p>In order to use the Creator as it is intended, it is useful to understand the basics about the concept and architecture of the software.</p>
 <h1 id="configurations--asset-updates">Configurations &amp; Asset Updates</h1>
 <h2 id="layers-of-configurations">Layers of Configurations</h2>
-<p>The control of the functions and the way they are accessed vary from function to function. Basically, there are two different levels for settings.
+<p>The control of the functions and the way they are accessed vary from function to function. Basically, there are two different levels of settings.
 The first and lowest is the <strong>&quot;Config&quot; level</strong>. The options to be set via the &quot;Config&quot; files determine which features can be controlled and used in the session at all.
 This also includes, for example, which features are displayed in the user's hand menu. Features that are not enabled via the &quot;Configs&quot; cannot be controlled by the software at runtime.
-The second level is the <strong>authority level</strong>, which should not be confused with the network authority of synchronised objects.
-The authority level determines for each profile which of the features may be used by the user of the profile. It is essential that the features are also authorised by the &quot;Config&quot; level. If the &quot;Config&quot; level prohibits a feature, it will not be made available regardless of the authority level.
-This means that every available feature in a session must be activated in the &quot;Configs&quot; in order to be used. If a profile is to use a feature that is activated in the &quot;Configs&quot;, its authorisation level must be adjusted.</p>
+The second level is the <strong>authority level</strong>, which should not be confused with the network authority of synchronized objects.
+The authority level determines for each profile which of the features may be used by the user of the profile. It is essential that the features are also authorized by the &quot;Config&quot; level. If the &quot;Config&quot; level prohibits a feature, it will not be made available regardless of the authority level.
+This means that every available feature in a session must be activated in the &quot;Configs&quot; in order to be used. If a profile is to use a feature that is activated in the &quot;Configs&quot;, its authorization level must be adjusted.</p>
 <h2 id="asset-bundles-and-updates">Asset Bundles and Updates</h2>
-<p>In MARBLE, sessions are represented as &quot;asset bundles&quot;. These bundles contain all the necessary information and models for a session. They also contain configurations and authorisation levels for each individual client. Each session can therefore have its own configurations and authorisation levels depending on its area of use.
+<p>In MARBLE, sessions are represented as &quot;asset bundles&quot;. These bundles contain all the necessary information and models for a session. They also contain configurations and authorization levels for each individual client. Each session can therefore have its own configurations and authorization levels depending on its area of use.
 By default, each client requests the current asset bundle from the server and updates all information (e.g. configurations, permission levels, settings, models, etc.) based on these bundles. As a result, each session on each client has the same settings and data.
 However, it is possible to bypass this behaviour and inject clients with individual configurations and settings.
 To do this, it is necessary to understand MARBLE's asset update process.
-When the MARBLE Player is started, it first loads the configuration files onto the respective systems. This is important to avoid unwanted session settings from the asset bundles. After loading these configurations, the update process checks which data should be requested.The &quot;requestAnchor&quot;, &quot;requestConfig&quot; and &quot;requestAssets&quot; configs of the &quot;NetworkConfig&quot; or &quot;netconfig.txt&quot; file determine which contents are to be requested (currently only the asset bundles can be requested).
+When the MARBLE Player is started, it first loads the configuration files onto the respective systems. This is important to avoid unwanted session settings from the asset bundles. After loading these configurations, the update process checks which data should be requested. The &quot;requestAnchor&quot;, &quot;requestConfig&quot; and &quot;requestAssets&quot; configs of the &quot;NetworkConfig&quot; or &quot;netconfig.txt&quot; file determine which contents are to be requested (currently only the asset bundles can be requested).
 After the data has been requested and hopefully received, the update process checks which of this data should actually be used in the current session. Important for this process are the configs &quot;updateIp&quot;, &quot;updateConfigs&quot; and &quot;updateAssets&quot;.</p>
 <h2 id="irreversible-bypassing">Irreversible Bypassing</h2>
 <p>To avoid irreversible bypassing, you should never create a session/asset bundle with the &quot;updateConfigs&quot; option disabled (set to &quot;0&quot;). This will cause the client to never use the asset bundle configurations, which means you will need to manually change this configuration in the machine's locally stored configuration file or connect each client and change this value in the Creator's &quot;Edit Configs&quot; menu.</p>
 <h2 id="update-configs-and-effects">Update Configs and Effects</h2>
-<p>In the following table you can check which behaviour is to expected.</p>
+<p>In the following table, you can check which behaviour is to expected.</p>
 <table>
 <thead>
 <tr>
@@ -147,11 +147,11 @@ After the data has been requested and hopefully received, the update process che
 <tbody>
 <tr>
 <td>requestAnchor</td>
-<td><em>Will request the stored spatial anchor from the server. Currently not implemented.</em></td>
+<td><em>Will request the stored spatial anchor from the server. Currently, not implemented.</em></td>
 </tr>
 <tr>
 <td>requestConfigs</td>
-<td><em>Requests and updates all configuration files regardless of the asset bundle. This allows a session to update data such as models without using the session's saved configurations. Currently not implemented.</em></td>
+<td><em>Requests and updates all configuration files regardless of the asset bundle. This allows a session to update data such as models without using the session's saved configurations. Currently, not implemented.</em></td>
 </tr>
 <tr>
 <td>requestAssets</td>
@@ -167,18 +167,18 @@ After the data has been requested and hopefully received, the update process che
 </tr>
 <tr>
 <td>updateConfigs</td>
-<td>Determines whether to use the asset bundle configurations. If this option is disabled, the local configurations of the configuration files are not updated with the asset bundle configurations. This may result in a irreversible bypassing. See <a href="Concept-&-Architecture#irreversible-bypassing">Irreversible Bypassing</a>. The recommended option is &quot;enabled&quot; (&quot;1&quot;).</td>
+<td>Determines whether to use the asset bundle configurations. If this option is disabled, the local configurations of the configuration files are not updated with the asset bundle configurations. This may result in an irreversible bypassing. See <a href="Concept-&-Architecture#irreversible-bypassing">Irreversible Bypassing</a>. The recommended option is &quot;enabled&quot; (&quot;1&quot;).</td>
 </tr>
 <tr>
 <td>updateAssets</td>
-<td>Determines whether the assets should be updated with the received asset bundle. With the exception of the Configs (which are controlled with &quot;updateConfigs&quot;), the asset bundle data will overwrite the locally stored data depending on this config. If &quot;requestAssets&quot; is disabled but &quot;updateAsstes&quot; is enabled, this means that the project will be updated with the first available asset bundle. If no asset bundle is available, the last used project is loaded (not asset bundle(!)). If this project is invalid, the default project is loaded (&quot;Santa Maria de Melque&quot;).</td>
+<td>Determines whether the assets should be updated with the received asset bundle. Except for the Configs (which are controlled with &quot;updateConfigs&quot;), the asset bundle data will overwrite the locally stored data depending on this config. If &quot;requestAssets&quot; is disabled but &quot;updateAsstes&quot; is enabled, this means that the project will be updated with the first available asset bundle. If no asset bundle is available, the last used project is loaded (not asset bundle(!)). If this project is invalid, the default project is loaded (&quot;Santa Maria de Melque&quot;).</td>
 </tr>
 </tbody>
 </table>
 <h1 id="system-information">System Information</h1>
 <h2 id="hololens2-permission">HoloLens2 Permission</h2>
-<p>The MARBLE Player application requires access to the pictures library. It stores its application data (e.g. configurations, asset bundles, etc.) in the library to prevent it from being deleted when a new app version is installed. It does not read out any personal infromation.</p>
-<h1 id="whats-next">What´s Next?</h1>
+<p>The MARBLE Player application requires access to the pictures' library. It stores its application data (e.g. configurations, asset bundles, etc.) in the library to prevent it from being deleted when a new app version is installed. It does not read out any personal information.</p>
+<h1 id="whats-next">What's Next?</h1>
 <ul>
 <li><a href="Further-Notes">Read further information about MARBLES state</a></li>
 <li><a href="Quick-Fix-&-Workarounds">Read the Quick Fix &amp; Workarounds</a></li>
