@@ -1,0 +1,261 @@
+{
+  "source_base_path": "C:/Users/Marc/Git/MARBLE_Wiki/MARBLEWiki/docfx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "templates/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "templates/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Concept-&-Architecture.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Concept-&-Architecture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Concept.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Concept.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Configs-And-Effects.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Configs-And-Effects.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Creator-Overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Creator-Overview.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Creator-Usage.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Creator-Usage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Edit-Showcase-Database.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Edit-Showcase-Database.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Edit-Showcase-Models.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Edit-Showcase-Models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Further-Notes.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Further-Notes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Getting-Started.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Getting-Started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Home.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Home.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Import-Models.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Import-Models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Install-&-Setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Install-&-Setup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "wiki/MARBLE-Projects.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/MARBLE-Projects.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Quick-Fix-&-Workarounds.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Quick-Fix-&-Workarounds.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Tool-Databases.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Tool-Databases.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/_Footer.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/_Footer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "wiki/_Sidebar.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/_Sidebar.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
