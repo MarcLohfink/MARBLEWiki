@@ -3,7 +3,7 @@ name: Docs
 on:
   push:
     branches:
-    - docfx
+    - main
     paths:
     - docfx_project/**
     - .github/workflows/docs.yml
