@@ -5,14 +5,13 @@ on:
     branches:
     - docfx
     paths:
-    - src/**
-    - docs/**
+    - docfx_project/**
     - .github/workflows/docs.yml
   pull_request:
     branches:
     - main
     paths:
-    - docs/**
+    - docfx_project/**
     - .github/workflows/docs.yml
   workflow_dispatch:
 
