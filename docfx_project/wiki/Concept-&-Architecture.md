@@ -31,7 +31,7 @@ In the following table you can check which behaviour is to expected.
 | requestAssets | Requests the asset bundle to be used in the session. This results in a deadlock if the server is not running but the client requests the asset bundles. |
 | | |
 | updateIP | Determines whether the IP address of the asset bundle should be used as the server address. The IP address of the server is stored in the Configs. As the server address may change between the different uses of an asset bundle, the stored IP address in a bundle can be outdated. The server address can be changed locally in the "netconfig.txt". If this option is not enabled, the client uses its IP address from the local network configuration file. The recommended option is "disabled" ("0"). |
-| updateConfigs | Determines whether to use the asset bundle configurations. If this option is disabled, the local configurations of the configuration files are not updated with the asset bundle configurations. This may result in a irreversible bypassing. See <a href="Concept-&-Architecture#irreversible-bypassing.md">Irreversible Bypassing</a>. The recommended option is "enabled" ("1"). |
+| updateConfigs | Determines whether to use the asset bundle configurations. If this option is disabled, the local configurations of the configuration files are not updated with the asset bundle configurations. This may result in a irreversible bypassing. See <a href="Concept-&-Architecture#irreversible-bypassing">Irreversible Bypassing</a>. The recommended option is "enabled" ("1"). |
 | updateAssets | Determines whether the assets should be updated with the received asset bundle. With the exception of the Configs (which are controlled with "updateConfigs"), the asset bundle data will overwrite the locally stored data depending on this config. If "requestAssets" is disabled but "updateAsstes" is enabled, this means that the project will be updated with the first available asset bundle. If no asset bundle is available, the last used project is loaded (not asset bundle(!)). If this project is invalid, the default project is loaded ("Santa Maria de Melque"). |
 
 # System Information
@@ -39,5 +39,5 @@ In the following table you can check which behaviour is to expected.
 The MARBLE Player application requires access to the pictures library. It stores its application data (e.g. configurations, asset bundles, etc.) in the library to prevent it from being deleted when a new app version is installed. It does not read out any personal infromation.
 
 # What´s Next?
-* <a href="Concept-&-Architecture#irreversible-bypassing.md">Read further information about MARBLES state</a>
-* <a href="Concept-&-Architecture#irreversible-bypassing.md">Read the Quick Fix & Workarounds</a>
+* <a href="Further-Notes">Read further information about MARBLES state</a>
+* <a href="Quick-Fix-&-Workarounds">Read the Quick Fix & Workarounds</a>

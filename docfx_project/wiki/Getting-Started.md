@@ -1,4 +1,4 @@
-First of all make sure that you have installed MARBLE as stated in <a href="Install-&-Setup.md">Install & Setup</a>.
+First of all make sure that you have installed MARBLE as stated in <a href="Install-&-Setup">Install & Setup</a>.
 
 # Open MARBLE Creator
 
@@ -11,14 +11,14 @@ See the next figure:
 <div style="text-align:center"><img src="images/screenshots/00_Creator_General_03_CreatorDropdownTotalHighlighted.JPG" width="60%" /></div>
 
 # Create A Project
-MARBLE is based on MARBLE Projects. Those are data structures which contain and reference all important data for your session. In order to use MARBLE synchronized on the HoloLense2 devices you need at least one MARBLE Project which you distribute as package (see <a href="Install-&-Setup.md">_Concept & Architecture - AssetBundles And Updates_</a>).
-To create a MARBLE Project enter a unique name and click "Create New Project". For more information read <a href="Install-&-Setup.md">MARBLE Projects</a>.
+MARBLE is based on MARBLE Projects. Those are data structures which contain and reference all important data for your session. In order to use MARBLE synchronized on the HoloLense2 devices you need at least one MARBLE Project which you distribute as package (see <a href="Concept-&-Architecture#asset-bundles-and-updates">_Concept & Architecture - AssetBundles And Updates_</a>).
+To create a MARBLE Project enter a unique name and click "Create New Project". For more information read <a href="MARBLE-Projects">MARBLE Projects</a>.
 
 # Fill The Project
-In order to use your imported models you have to create a new model database and also reference all the necessary configs and settings. Read <a href="Install-&-Setup.md">MARBLE Projects - Select Configs</a> and <a href="Install-&-Setup.md">Edit Showcase Models</a>. For the sake of this tutorial reference the "Selected Tools:" and the "Authority Settings:" with the default references starting with the prefix "Default".
+In order to use your imported models you have to create a new model database and also reference all the necessary configs and settings. Read <a href="MARBLE-Projects#select-configs">MARBLE Projects - Select Configs</a> and <a href="Edit-Showcase-Models">Edit Showcase Models</a>. For the sake of this tutorial reference the "Selected Tools:" and the "Authority Settings:" with the default references starting with the prefix "Default".
 
 # Export Project
-After finishing all the steps at <a href="Install-&-Setup.md">MARBLE Projects</a> you can export the project into a package by pressing the "Export Project" button in the work area.
+After finishing all the steps at <a href="MARBLE-Projects">MARBLE Projects</a> you can export the project into a package by pressing the "Export Project" button in the work area.
 <div style="text-align:center"><img src="images/screenshots/01_Features_Project_07_Export.JPG" width="60%" /></div>
 
 When finished Unity will show you the following prompt indicating that the export has finished.
@@ -26,7 +26,7 @@ When finished Unity will show you the following prompt indicating that the expor
 
 # Distribute Project
 After the project has been successfully exported, it can be selected for distribution in the Session Control window. Select it from the dropdown at "Package Selection:" > "Chose Bundle:". The name of the bundle is always _"marble\_*author name*\_*project name*\_*creation date*\_*creation time*\_*build version*_.
-For more information read <a href="Install-&-Setup.md">_Concept & Architecture - AssetBundles And Updates_</a>.
+For more information read <a href="Concept-&-Architecture#asset-bundles-and-updates">_Concept & Architecture - AssetBundles And Updates_</a>.
 <div style="text-align:center"><img src="images/screenshots/02_SessionControl_00_SelectedBundle.JPG" width="60%" /></div>
 
 # Run Session
@@ -46,6 +46,6 @@ First there will only be the "User: admin". This is the host client on the serve
 
 # Whats Next?
 Now you are free to investigate the model.
-* <a href="Install-&-Setup.md">Get an overview of the Creator</a>
-* <a href="Install-&-Setup.md">Read about importing models</a>
-* <a href="Install-&-Setup.md">Create a MARBLE Project</a>
+* <a href="Creator-Overview">Get an overview of the Creator</a>
+* <a href="Import-Models">Read about importing models</a>
+* <a href="MARBLE-Projects">Create a MARBLE Project</a>

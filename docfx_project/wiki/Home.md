@@ -22,6 +22,6 @@ Instead of having to continue working with two-dimensional sources such as photo
 
 * [Read the IEEE ISMAR Paper <img src="images/icons/extlink.png" width="15" />](https://ieeexplore.ieee.org/document/9974285)
 * [Watch the videos <img src="images/icons/extlink.png" width="15" />](https://www.youtube.com/playlist?list=PLnLsJCpSmHCUUHcXpfS0quV_wdfkYei4v)
-* <a href="Concept.md">The MARBLE Concept</a> 
+* <a href="Concept">The MARBLE Concept</a> 
 * [Get Access](mailto:marc-alexander.lohfink@hfu.eu)
-* <a href="Concept.md">Get Started</a> 
+* <a href="Getting-Started">Get Started</a> 

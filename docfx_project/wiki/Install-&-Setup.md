@@ -91,6 +91,6 @@ Layers:
 
 # What´s Next?
 
-* <a href="Creator-Overview.md">Get an overview of the MARBLE Creator</a>
-* <a href="Creator-Overview.md">Get Started</a>
-* <a href="Creator-Overview.md">Read the Quick Fix & Workarounds</a>
+* <a href="Creator-Overview">Get an overview of the MARBLE Creator</a>
+* <a href="Getting-Started">Get Started</a>
+* <a href="Quick-Fix-&-Workarounds">Read the Quick Fix & Workarounds</a>

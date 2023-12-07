@@ -27,8 +27,8 @@ And the publications from our cooperative partners:
 * [Read the IEEE ISMAR Paper <img src="images/icons/extlink.png" width="15" />](https://ieeexplore.ieee.org/document/9974285)
 * [Watch the videos <img src="images/icons/extlink.png" width="15" />](https://www.youtube.com/playlist?list=PLnLsJCpSmHCUUHcXpfS0quV_wdfkYei4v)
 * [Get Access](mailto:marc-alexander.lohfink@hfu.eu)
-* <a href="Install-&-Setup.md">Install MARBLE</a>
-* <a href="Install-&-Setup.md">Get Started</a>
+* <a href="Install-&-Setup">Install MARBLE</a>
+* <a href="Getting-Started">Get Started</a>
 
 # Sources
 [1] M. Akçayır and G. Akçayir. Advantages and challenges associated with augmented reality for education: A systematic review of the literature. Educational Research Review, 20:1–11, 2017. doi: 10.1016/j.edurev.2016.11.002

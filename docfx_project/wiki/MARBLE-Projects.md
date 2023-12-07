@@ -88,7 +88,7 @@ While not recommended you can change the paths where the project should be expor
 <div style="text-align:center"><img src="images/screenshots/01_Features_Project_06_PathEditHighlight.JPG" width="60%" /></div>
 
 # What's Next?
-* <a href="Edit-Showcase-Database.md">Create a showcase database to reference it in your project</a>
-* <a href="Edit-Showcase-Database.md">Edit your showcase models</a>
-* <a href="Edit-Showcase-Database.md">Edit a Config</a> 
-* <a href="Edit-Showcase-Database.md">Export the project</a>
+* <a href="Edit-Showcase-Database">Create a showcase database to reference it in your project</a>
+* <a href="Edit-Showcase-Models">Edit your showcase models</a>
+* <a href="Configs-And-Effects">Edit a Config</a> 
+* <a href="Getting-Started#export-project">Export the project</a>

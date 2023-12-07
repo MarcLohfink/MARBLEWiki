@@ -34,6 +34,6 @@ The default import path is _"Assets/Models/\_User/Models/\*Subfolder\*"_.
 ## What´s Next?
 After the model is imported, it can be used in the "Edit Showcase Model" window.
 <br><img src="images/icons/Warning_Texture.png" width="10" /> Be aware that the importer only copies the models into Unity. Especially .obj models are very error-prone. If a texture does not sit properly on the model, it is advisable to inspect the model first.
-* <a href="MARBLE-Projects.md">Create a MARBLE Project</a>
-* <a href="MARBLE-Projects.md">Create a showcase database for your seminar</a>
-* <a href="MARBLE-Projects.md">Edit your imported model to be used in your seminar</a>
+* <a href="MARBLE-Projects">Create a MARBLE Project</a>
+* <a href="Edit-Showcase-Database">Create a showcase database for your seminar</a>
+* <a href="Edit-Showcase-Models">Edit your imported model to be used in your seminar</a>

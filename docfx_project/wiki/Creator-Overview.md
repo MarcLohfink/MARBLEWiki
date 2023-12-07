@@ -25,7 +25,7 @@ The Creator Window is separated into:
 Consists of:
 * Edit MARBLE Project --> Create, Edit and Delete MARBLE Projects.
 * Edit Showcase Model --> Create, Edit, Link and Delete MARBLE Models.
-* Edit Configs --> Edit config files to configure the MARBLE session (see <a href="Configs-And-Effects.md">Configs & Effects</a>).
+* Edit Configs --> Edit config files to configure the MARBLE session (see <a href="Configs-And-Effects">Configs & Effects</a>).
 * Edit Authority --> Edit what user is allowed to do what.
 * Import --> Controls to import model files to unity to use them in a MARBLE Project.
 * User Management --> Controls to create, edit and delete user profiles. It also displays the login area. Currently experimental.
@@ -48,6 +48,6 @@ Info Box:
 <div style="text-align:center"><img src="images/screenshots/00_Creator_General_01_FoldoutAreas.JPG" width="60%" /></div>
 
 # What´s Next?
-* <a href="Configs-And-Effects.md">Read about importing models</a>
-* <a href="Configs-And-Effects.md">Create a MARBLE Project</a>
-* <a href="Configs-And-Effects.md">Create a showcase database for your seminar</a>
+* <a href="Import-Models">Read about importing models</a>
+* <a href="MARBLE-Projects">Create a MARBLE Project</a>
+* <a href="Edit-Showcase-Database">Create a showcase database for your seminar</a>
