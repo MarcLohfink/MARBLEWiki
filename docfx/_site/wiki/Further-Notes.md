@@ -1,2 +1,0 @@
-# Experimental State and Research Software
-Since MARBLE is a research software, it is not 100% stable and reliable. Many functions may not work directly as expected. Try everything at your pace and take your time. 
