@@ -1,2 +1,2 @@
 Test
-[Link](docfx_project/wiki/home)
+[Link](docfx_project/wiki/Home)
