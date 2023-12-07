@@ -30,7 +30,7 @@ jobs:
 
     - name: DocFX Build
       working-directory: docfx_project
-      run: docfx .\docfx.json > build_output.log
+      run: docfx .\docfx.json
       continue-on-error: false
 
     - name: Publish
@@ -40,7 +40,3 @@ jobs:
         publish_dir: docfx_project/_site
         force_orphan: true
         
-    - name: Display DocFX Build Output
-      run: |
-        cat docfx_project/build_output.log
-      if: always()
