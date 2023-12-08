@@ -5,7 +5,8 @@
 <script>
     var bannerHTML = '';
 
-    if (window.location.pathname === 'wiki/Home.html' || window.location.pathname === 'wiki/Home' || window.location.pathname === 'https://marclohfink.github.io/MARBLEWiki/wiki/Home.html') {
+    if (window.location.pathname === '/wiki/Home.html' || window.location.pathname === '/wiki/Home' 
+	|| window.location.pathname === 'https://marclohfink.github.io/MARBLEWiki/wiki/Home.html') {
         bannerHTML = '<div class="hfubanner"><h2>Learn Spatial! <br/> Introducing the MARBLE App</h2></div>';
     } else {
         bannerHTML = '<div class="hfubanner"><h2>Learn &raquo;Configs &amp; Effects&laquo;!</h2></div>';		
@@ -105,7 +106,14 @@
  <div id="bannerPlaceholder"><!-- Hier wird das Banner eingefügt --></div>
 
 
+<!--
+  <p>Der Wert von window.location.pathname ist: <span id="pathnameValue"></span></p>
 
+  <script>
+    // JavaScript-Code, um den Wert von window.location.pathname zu erhalten und in das HTML einzufügen
+    document.getElementById('pathnameValue').innerText = window.location.pathname;
+  </script>
+  -->
 
                 <div role="main" class="main-panel-content hide-when-search">
 
