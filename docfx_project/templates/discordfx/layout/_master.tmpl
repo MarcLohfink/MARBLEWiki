@@ -8,6 +8,17 @@
 <!--[if IE]><![endif]-->
 <html>
   
+<script>
+    var bannerHTML = '';
+
+    if (window.location.pathname === '/wiki/Home.html') {
+        bannerHTML = '<div class="hfubanner"><h2>Learn Spatial! <br/> Introducing the MARBLE App</h2></div>';
+    } else {
+        bannerHTML = '<div class="hfubanner"><h2>Learn &raquo;{{#title}}{{title}}{{/title}}&laquo;!</h2></div>';		
+    }
+</script>
+
+  
   {{>partials/head}}
 
   <body>
@@ -51,20 +62,12 @@
                     {{>partials/searchResults}}
                 {{/_enableSearch}}
 
-<!--
-<script type="text/javascript">
-if(window.location.pathname === '/home.html')
-{
--->
-<div class="hfubanner">
-<h2>Learn Spatial!</h2>
-<h2>Introducing the MARBLE App</h2>
-</div>
 
-<!--
-}
-</script>
--->
+ <div id="bannerPlaceholder"><!-- Hier wird das Banner eingefügt --></div>
+
+
+
+
                 <div role="main" class="main-panel-content hide-when-search" >
 
                     {{^_disableBreadcrumb}}
@@ -80,6 +83,13 @@ if(window.location.pathname === '/home.html')
         </div>
 
         {{>partials/scripts}}
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var bannerContainer = document.getElementById('bannerPlaceholder');
+            bannerContainer.innerHTML = bannerHTML;
+        });
+    </script>
 
     </body>
 

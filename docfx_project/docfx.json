@@ -28,7 +28,8 @@
       "_appName": "MARBLE Wiki",
       "_appTitle": "MARBLE Wiki",
       "_enableSearch": true,
-      "pdf": true
+      "pdf": true,
+	  "_disableBreadcrumb": true
     }
   }
 }
