@@ -2,13 +2,24 @@
 <!--[if IE]><![endif]-->
 <html>
   
+<script>
+    var bannerHTML = '';
+
+    if (window.location.pathname === '/wiki/Home.html') {
+        bannerHTML = '<div class="hfubanner"><h2>Learn Spatial! <br/> Introducing the MARBLE App</h2></div>';
+    } else {
+        bannerHTML = '<div class="hfubanner"><h2>Learn &raquo;Concept &amp; Architecture&laquo;!</h2></div>';		
+    }
+</script>
+
+  
 
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Configurations &amp; Asset Updates | MARBLE Wiki </title>
+    <title>Concept &amp; Architecture | MARBLE Wiki </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Configurations &amp; Asset Updates | MARBLE Wiki ">
+    <meta name="title" content="Concept &amp; Architecture | MARBLE Wiki ">
     <meta name="generator" content="docfx ">
   
     <link rel="shortcut icon" href="images/pictures/favicon.ico">
@@ -90,35 +101,20 @@
                       </div>
                       <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
                     </div>
-<!--
-<script type="text/javascript">
-if(window.location.pathname === '/home.html')
-{
--->
-<div class="hfubanner">
-<h2>Learn Spatial!</h2>
-<h2>Introducing the MARBLE apps</h2>
-</div>
 
-<!--
-}
-</script>
--->
+ <div id="bannerPlaceholder"><!-- Hier wird das Banner eingefügt --></div>
+
+
+
+
                 <div role="main" class="main-panel-content hide-when-search">
 
 
-                        <div class="subnav navbar navbar-default">
-                          <div class="container hide-when-search" id="breadcrumb">
-                            <ul class="breadcrumb">
-                              <li></li>
-                            </ul>
-                          </div>
-                        </div>
-
                     <article class="content wrap" id="_content" data-uid="">
+<h1>Concept & Architecture</h1>
 
 <p>In order to use the Creator as it is intended, it is useful to understand the basics about the concept and architecture of the software.</p>
-<h1 id="configurations--asset-updates">Configurations &amp; Asset Updates</h1>
+<h1>Configurations & Asset Updates</h1>
 <h2 id="layers-of-configurations">Layers of Configurations</h2>
 <p>The control of the functions and the way they are accessed vary from function to function. Basically, there are two different levels of settings.
 The first and lowest is the <strong>&quot;Config&quot; level</strong>. The options to be set via the &quot;Config&quot; files determine which features can be controlled and used in the session at all.
@@ -200,6 +196,13 @@ After the data has been requested and hopefully received, the update process che
         <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
         <script type="text/javascript" src="../styles/docfx.js"></script>
         <script type="text/javascript" src="../styles/main.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var bannerContainer = document.getElementById('bannerPlaceholder');
+            bannerContainer.innerHTML = bannerHTML;
+        });
+    </script>
 
     </body>
 

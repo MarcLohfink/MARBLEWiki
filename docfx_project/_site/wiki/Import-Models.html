@@ -2,13 +2,24 @@
 <!--[if IE]><![endif]-->
 <html>
   
+<script>
+    var bannerHTML = '';
+
+    if (window.location.pathname === '/wiki/Home.html') {
+        bannerHTML = '<div class="hfubanner"><h2>Learn Spatial! <br/> Introducing the MARBLE App</h2></div>';
+    } else {
+        bannerHTML = '<div class="hfubanner"><h2>Learn &raquo;Import Models&laquo;!</h2></div>';		
+    }
+</script>
+
+  
 
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Navigate to import | MARBLE Wiki </title>
+    <title>Import Models | MARBLE Wiki </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Navigate to import | MARBLE Wiki ">
+    <meta name="title" content="Import Models | MARBLE Wiki ">
     <meta name="generator" content="docfx ">
   
     <link rel="shortcut icon" href="images/pictures/favicon.ico">
@@ -90,34 +101,19 @@
                       </div>
                       <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
                     </div>
-<!--
-<script type="text/javascript">
-if(window.location.pathname === '/home.html')
-{
--->
-<div class="hfubanner">
-<h2>Learn Spatial!</h2>
-<h2>Introducing the MARBLE apps</h2>
-</div>
 
-<!--
-}
-</script>
--->
+ <div id="bannerPlaceholder"><!-- Hier wird das Banner eingefügt --></div>
+
+
+
+
                 <div role="main" class="main-panel-content hide-when-search">
 
 
-                        <div class="subnav navbar navbar-default">
-                          <div class="container hide-when-search" id="breadcrumb">
-                            <ul class="breadcrumb">
-                              <li></li>
-                            </ul>
-                          </div>
-                        </div>
-
                     <article class="content wrap" id="_content" data-uid="">
+<h1>Import Models</h1>
 
-<p>The Import panel provides an easy way to import supported models into the Creator and thus into Unity.</p>
+The Import panel provides an easy way to import supported models into the Creator and thus into Unity.
 <h2 id="navigate-to-import">Navigate to import</h2>
 <p>Navigate to the &quot;Import&quot; menu item in the Creator. A window opens where you can import models to use with MARBLE (see below).
 You will see the following labels and options:</p>
@@ -187,6 +183,13 @@ If this is not your first time entering a subfolder, you will be prompted to do 
         <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
         <script type="text/javascript" src="../styles/docfx.js"></script>
         <script type="text/javascript" src="../styles/main.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var bannerContainer = document.getElementById('bannerPlaceholder');
+            bannerContainer.innerHTML = bannerHTML;
+        });
+    </script>
 
     </body>
 
