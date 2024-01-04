@@ -122,6 +122,14 @@
                     <article class="content wrap" id="_content" data-uid="">
 <h1>Configs & Effects</h1>
 
+MARBLE stores most of its settings in configuration files. These files are not only necessary for the app itself, but also enable the configuration of functions for sessions depending on their didactic goal. For example, one can remove all interactions from all clients to turn the MARBLE Player into a simple, one-way presentation tool. In combination with the authentication and authority mechanisms, one can configure a session so that only one or two people (e.g. the professor or tutor) can control the session and the models. If you would like to learn more about this, read <a href="Concept-&-Architecture">Concept & Architecture</a>
+<h2>Quick Config Edit</h2>
+The "Quick Config Edit" panel allows the user to quickly configure certain settings that overwrite the settings from the configuration files when exporting a MARBLE project. The "Quick Config Edit" panel is located under "Edit Configs > Quick Config Edit".
+<div style="text-align:center"><img src="images/screenshots/01_Features_QuickConfig_00_Overview.JPG" width="40%"></div>
+<h2>Session Configs</h2>
+In the "Edit Session Config" area, the user can configure the session for the MARBLE project. The user can configure features such as menu items or define whether the model can be moved on a specific axis or not. In the "Selected Config:" drop-down menu, the user can select which configuration they want to change or delete. The four types of configs available are Boolean, String, Integer or Float. All four configurations to be changed are displayed in the main area of the "Edit Session Configs" panel. 
+<div style="text-align:center"><img src="images/screenshots/01_Features_Config_00_Overview.JPG" width="40%"></div>
+<h1>Configs List</h1>
 Italic configs are currently not implemented. Monospaced should not be changed.
 <h2 id="main-config">Main Config</h2>
 <table>
@@ -150,27 +158,27 @@ Italic configs are currently not implemented. Monospaced should not be changed.
 </tr>
 <tr>
 <td>rotateMX</td>
-<td>Determines if the model can be rotated around X-axis.</td>
+<td><code>Moved to Feature Config.</code></td>
 </tr>
 <tr>
 <td>rotateMY</td>
-<td>Determines if the model can be rotated around Y-axis.</td>
+<td><code>Moved to Feature Config.</code></td>
 </tr>
 <tr>
 <td>rotateMZ</td>
-<td>Determines if the model can be rotated around Z-axis.</td>
+<td><code>Moved to Feature Config.</code></td>
 </tr>
 <tr>
 <td>translateMX</td>
-<td>Determines if the model can be moved along the X-axis.</td>
+<td><code>Moved to Feature Config.</code></td>
 </tr>
 <tr>
 <td>translateMY</td>
-<td>Determines if the model can be moved along the Y-axis.</td>
+<td><code>Moved to Feature Config.</code></td>
 </tr>
 <tr>
 <td>translateMZ</td>
-<td>Determines if the model can be moved along the Z-axis.</td>
+<td><code>Moved to Feature Config.</code></td>
 </tr>
 <tr>
 <td>showShadows</td>
@@ -234,7 +242,7 @@ Italic configs are currently not implemented. Monospaced should not be changed.
 </tr>
 <tr>
 <td>EntityInteractionMode</td>
-<td>Determines which interaction mode is used. 0 = no interaction, 1 = one hand interaction, 2 = two hand interaction, 3 = everything.</td>
+<td><code>Moved to Feature Config.</code></td>
 </tr>
 <tr>
 <td>expSceneIndex</td>
@@ -296,8 +304,88 @@ Italic configs are currently not implemented. Monospaced should not be changed.
 <td></td>
 </tr>
 <tr>
+<td>displayStartMessage</td>
+<td>If a message should be displayed when the app is started.</td>
+</tr>
+<tr>
+<td>modelTranslateZ</td>
+<td>If the main showcase model can be moved on the z axis.</td>
+</tr>
+<tr>
+<td>modelTranslateY</td>
+<td>If the main showcase model can be moved on the y axis.</td>
+</tr>
+<tr>
+<td>modelTranslateX</td>
+<td>If the main showcase model can be moved on the x axis.</td>
+</tr>
+<tr>
+<td>modelRotationZ</td>
+<td>If the main showcase model can be rotated around the z axis.</td>
+</tr>
+<tr>
+<td>modelRotationY</td>
+<td>If the main showcase model can be rotated around the y axis.</td>
+</tr>
+<tr>
+<td>modelRotationX</td>
+<td>If the main showcase model can be rotated around the x axis.</td>
+</tr>
+<tr>
+<td>allowToolSpawning</td>
+<td>If the user is allowed to spawn tools.</td>
+</tr>
+<tr>
+<td>SpatialAwareness</td>
+<td>If the spatial awareness system is enabled.<br> <code>Don´t change - enabled</code></td>
+</tr>
+<tr>
+<td>useDirectAnchoring</td>
+<td>If the app asks the client on start if the stored spatial anchor should be placed. Use this if you are sure that the user only executes the app in a known location.</td>
+</tr>
+<tr>
+<td>useBoundingBox</td>
+<td><code>Leave false - Don´t change</code></td>
+</tr>
+<tr>
+<td>QRCodeTracking</td>
+<td><code>Leave true - Don´t change</code></td>
+</tr>
+<tr>
+<td>SpatialLocator</td>
+<td><code>Leave true - Don´t change</code></td>
+</tr>
+<tr>
+<td>SpatialAnchors</td>
+<td><code>Leave true - Don´t change</code></td>
+</tr>
+<tr>
+<td>WorldOrigin</td>
+<td><code>Leave true - Don´t change</code></td>
+</tr>
+<tr>
+<td>useCaptureMechanics</td>
+<td><code>Leave true - Don´t change</code></td>
+</tr>
+<tr>
+<td>useStates</td>
+<td>Determines whether the user can change MARBLE states.</td>
+</tr>
+<tr>
 <td>useLightManipulation</td>
 <td>Determines whether the user can access the light manipulation feature.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Strings</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>startMessage</td>
+<td>The message displayed when &quot;displayStartMessage&quot; is enabled.</td>
 </tr>
 <tr>
 <td></td>
@@ -308,8 +396,28 @@ Italic configs are currently not implemented. Monospaced should not be changed.
 <td></td>
 </tr>
 <tr>
+<td>EntityInteractionMode</td>
+<td>Determines how the user can &quot;grab&quot; the main showcase model. <br> 0 = Not at all, 1 = with one hand, 2 = with two hands, 3 = 1 &amp; 2</td>
+</tr>
+<tr>
 <td>firstPlacementStrategy</td>
-<td>Determines with which placement strategy the client starts. 0 = Anchors, 1 = QR Code, 2 = Pointer</td>
+<td>Determines with which placement strategy the client starts. <br> 0 = Anchors, 1 = QR Code, 2 = Pointer</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Floats</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>startMessageDisplayDelay</td>
+<td>The delay until when the start message from &quot;startMessage&quot; is displayed, when &quot;displayStartMessage&quot; is enabled.</td>
+</tr>
+<tr>
+<td>startMessageDuration</td>
+<td>The duration the start message from &quot;startMessage&quot; is displayed, when &quot;displayStartMessage&quot; is enabled.</td>
 </tr>
 </tbody>
 </table>

@@ -9,7 +9,7 @@
 	|| window.location.pathname === '/MARBLEWiki/wiki/Home.html') {
         bannerHTML = '<div class="hfubanner"><h2>Learn Spatial! <br/> Introducing the MARBLE App</h2></div>';
     } else {
-        bannerHTML = '<div class="hfubanner"><h2>Learn &raquo; Introducing MARBLE &laquo;!</h2></div>';		
+        bannerHTML = '<div class="hfubanner"><h2>Learn &raquo;FAQ&laquo;!</h2></div>';		
     }
 </script>
 
@@ -18,9 +18,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> Introducing MARBLE  | MARBLE Wiki </title>
+    <title>FAQ | MARBLE Wiki </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" Introducing MARBLE  | MARBLE Wiki ">
+    <meta name="title" content="FAQ | MARBLE Wiki ">
     <meta name="generator" content="docfx ">
   
     <link rel="shortcut icon" href="images/pictures/favicon.ico">
@@ -121,28 +121,16 @@
 
                     <article class="content wrap" id="_content" data-uid="">
 
-<!-- 
-<div class="hfubanner">
-<h1>Learn Spatial!</h1>
-<h2>Introducing the MARBLE app</h2>
-</div>
--->
-<div style="text-align:center"><img src="images/pictures/teaser.png" width="60%"></div>
-<h1> Introducing MARBLE </h1> 
-MARBLE is an interactive multi-user presentation platform for displaying architecture on the HoloLens2. With MARBLE one can create content packages (seminars) and display them on multiple HL2 devices. MARBLE displays the 3D content for everybody at the same position with the same orientation to enable a shared learning experience.
-Additional MARBLE is packed with "tools" to interact with the presented 3D model, like pointers or clipping planes.
-<h1> MARBLE Background </h1>
-MARBLE is a cooperative project between the Albert-Ludwigs-University Freiburg and Furtwangen University. It explores the possibility of enriching archaeological higher education using mixed reality technology. It is based on the idea of offering students the opportunity to perceive and examine excavations and artefacts in three dimensions without having to travel to excavations.
-Instead of having to continue working with two-dimensional sources such as photographs or videos, MARBLE offers a shared three-dimensional interactive experience for a whole group of students.
-<div style="text-align:center"><img src="images/pictures/prob_sol.png" width="640"></div>
-<h1> Interested? What's Next?</h1>
-<ul>
-<li><a href="https://ieeexplore.ieee.org/document/9974285">Read the IEEE ISMAR Paper <img src="images/icons/extlink.png" width="15"></a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLnLsJCpSmHCUUHcXpfS0quV_wdfkYei4v">Watch the videos <img src="images/icons/extlink.png" width="15"></a></li>
-<li><a href="Concept">The MARBLE Concept</a></li>
-<li><a href="mailto:marc-alexander.lohfink@hfu.eu">Get Access</a></li>
-<li><a href="Getting-Started">Get Started</a></li>
-</ul>
+<p>Models are connected through &quot;pins&quot;. They are accessible through &quot;Edit Showcase Model &gt; Open Entity &gt; Edit Pins&quot;.</p>
+<h1 id="faq">FAQ</h1>
+<h2 id="description-of-pin-will-not-apply">Description of Pin will not apply</h2>
+<p>If you enter something into the &quot;Model Description&quot; area and it disappears when pressing &quot;Save Description&quot;, close the Creator (right click on the &quot;MARBLE Creator&quot; tab and select &quot;Close Tab&quot;) let unity run once and then reopen the Creator (MARBLE Creator &gt; Windows &gt; Creator).</p>
+<h2 id="empty-pin-descriptions-at-runtime">Empty Pin Descriptions at Runtime</h2>
+<p>If your description of a connected model will not appear at runtime (see image below), consider to open the root model in which the model is connected and update its pins. Navigate to &quot;Edit Showcase Model &gt; Open Entity &gt; Edit Pins&quot; and click &quot;Update Prefab&quot;.</p>
+<div style="text-align:center"><img src="images/screenshots/06_Pins_EmptyDescriptionAtRuntime.JPG" width="30%"></div>
+<p>To make sure that the description is set correctly, select the GameObject of the pin in the &quot;Hierarchy&quot; panel and check the &quot;Infotext&quot; entry at the &quot;Popup Data_Module (Script)&quot; component:</p>
+<div style="text-align:center"><img src="images/screenshots/06_Pins_01_EmptyDescriptionAtRuntime_.JPG" width="60%"></div>
+<p><br><img src="images/icons/Warning_Texture.png" width="10"> Do not change this entry directly. This can cause the loss of data. Rather restart unity.</p>
 
 </article>
               

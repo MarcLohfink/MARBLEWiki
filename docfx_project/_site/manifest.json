@@ -213,6 +213,19 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Pins,-Details-&-Connections.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Pins,-Details-&-Connections.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "wiki/Quick-Fix-&-Workarounds.md",
       "output": {

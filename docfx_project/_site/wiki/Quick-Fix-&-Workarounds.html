@@ -129,11 +129,15 @@
 <li>close the Creator Window (right click on the tab and click &quot;close tab&quot;).</li>
 <li>if step 1. does not work, restart Unity.</li>
 </ol>
+<h1 id="player-environment">Player Environment</h1>
+<h2 id="non-executing-menus">Non-Executing Menus</h2>
+<p>It can happen that you press something in a holographic menu but nothing happens. This often happens if the connection gets messed up. Make sure that the connection is established and reopen the affected menu.</p>
 <h1 id="configurations">Configurations</h1>
 <h2 id="malfunction-at-first-start">Malfunction at first start</h2>
 <p>If the app does not apply any configs on the first start, the app might not have initialized its configuration data correctly. MARBLE uses some space in the picture library to store data like configs. On the first start, it might happen that it does not get access to write all the data to disk before starting the experience.
-Steps to fix:
-make sure that:</p>
+Steps to fix:</p>
+<h3 id="mordor-version-build-newer-than-102720">Mordor Version (Build: newer than 1.0.272.0)</h3>
+<p>make sure that:</p>
 <ol>
 <li>the directory structure is created correctly --&gt; on the device manager, head to &quot;File Explorer &gt; User Folders &gt; Pictures&quot;. There has to be the following path: MARBLE &gt; Data &gt; Configs.</li>
 <li>there are seven config files (config, debugconfig, featureConfig, menuConfig, netconfig, pointerconfig, studyconfig).</li>
@@ -144,6 +148,21 @@ make sure that:</p>
 <li>create the folders stated in step 1.</li>
 <li>upload all files manually. Therefore, chose the &quot;Upload&quot; button, head to the Unity project folder &quot;Assets/_MARBLECreator/Data/Configs&quot; and upload the configs one by one.</li>
 <li>make sure that the uploaded configs have the right names (config, debugconfig, featureConfig, menuConfig, netconfig, pointerconfig, studyconfig).</li>
+<li>restart the MARBLE app.</li>
+</ol>
+<h3 id="focusgroup-version-build-102720">Focusgroup Version (Build: 1.0.272.0)</h3>
+<p>make sure that:</p>
+<ol>
+<li>the directory structure is created correctly --&gt; on the device manager, head to &quot;File Explorer &gt; User Folders &gt; Pictures&quot;. There has to be the following folder: MARBLE.</li>
+<li>there are five config files (config, debugconfig, featureConfig, menuConfig, netconfig).</li>
+<li>these config files are not empty (0 bytes).</li>
+</ol>
+<p>If one of those issues occur do the following:</p>
+<ol>
+<li>create the folder stated in step 1.</li>
+<li>upload all files manually. Therefore, chose the &quot;Upload&quot; button, head to the Unity project folder &quot;Assets/_MARBLECreator/Data/Configs&quot; and upload the configs one by one.</li>
+<li>make sure that the uploaded configs have the right names (config, debugconfig, featureConfig, menuConfig, netconfig, pointerconfig, studyconfig).</li>
+<li>do not upload newer versions of the files. Stick to the files that are not newer than those for build version 1.0.272.0)</li>
 <li>restart the MARBLE app.</li>
 </ol>
 

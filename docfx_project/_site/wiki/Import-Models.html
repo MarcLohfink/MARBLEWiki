@@ -167,6 +167,15 @@ If this is not your first time entering a subfolder, you will be prompted to do 
 <h2 id="location-for-advanced-users">Location for advanced users</h2>
 <p>The default import path is <em>&quot;Assets/Models/_User/Models/*Subfolder*&quot;</em>.</p>
 <div style="text-align:center"><img src="https://user-images.githubusercontent.com/77617650/232780996-21d44cdf-8bcc-4d1c-9d7c-22698fa26cc4.png" width="60%"></div>
+<h2 id="material-editor">Material Editor</h2>
+<p>As each model can organise its structure, materials and textures as desired, the user may need to change the materials of an imported model. For this reason, a &quot;material editor&quot; has been implemented. In the material editor, you can select an imported model and extract its materials and automatically assign them by name or order.
+The material editor is an experimental function. It is recommended to use it only if the normal import does not work and the imported model cannot be modified in a special 3D environment.</p>
+<div style="text-align:center"><img src="images/screenshots/01_Features_Import_03_MaterialEditor.JPG" width="60%"></div>
+<h2 id="faq">FAQ</h2>
+<h3 id="models-without-textures">Models without Textures</h3>
+<p>Sometimes it can happen that a material or texture is missing when importing a model. This happens when the model file references textures somewhere relative to its file system location. If the model has textures, import them by dragging and dropping them into the Unity asset folder in the project window where the imported model is located.
+If this does not solve the problem, select the model in the <a href="Import-Models#material-editor">material editor</a> and click on &quot;Extract Materials&quot;. This will create a folder called &quot;Materials_generated&quot; containing all the materials of the imported model. Then try to assign the textures by clicking on &quot;Map&quot;.
+If this does not result in the expected visual appearance, open the inspector by clicking on the tab next to the MARBLE Creator panel tab. In the project panel, go through the materials in the &quot;Materials_generated&quot; folder and drag the specific textures to the &quot;Albedo&quot; entry.</p>
 <h2 id="whats-next">What's Next?</h2>
 <p>After the model is imported, it can be used in the &quot;Edit Showcase Model&quot; window.
 <br><img src="images/icons/Warning_Texture.png" width="10"> Be aware that the importer only copies the models into Unity. Especially .obj models are very error-prone. If a texture does not sit properly on the model, it is advisable to inspect the model first.</p>
