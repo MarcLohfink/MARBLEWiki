@@ -9,7 +9,7 @@
 	|| window.location.pathname === '/MARBLEWiki/wiki/Home.html') {
         bannerHTML = '<div class="hfubanner"><h2>Learn Spatial! <br/> Introducing the MARBLE App</h2></div>';
     } else {
-        bannerHTML = '<div class="hfubanner"><h2>Learn &raquo;FAQ&laquo;!</h2></div>';		
+        bannerHTML = '<div class="hfubanner"><h2>Learn &raquo;Pins, Details &amp; Connections&laquo;!</h2></div>';		
     }
 </script>
 
@@ -18,9 +18,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>FAQ | MARBLE Wiki </title>
+    <title>Pins, Details &amp; Connections | MARBLE Wiki </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="FAQ | MARBLE Wiki ">
+    <meta name="title" content="Pins, Details &amp; Connections | MARBLE Wiki ">
     <meta name="generator" content="docfx ">
   
     <link rel="shortcut icon" href="images/pictures/favicon.ico">
@@ -120,17 +120,36 @@
 
 
                     <article class="content wrap" id="_content" data-uid="">
+<h1 id="pins-details--connections">Pins, Details &amp; Connections</h1>
 
-<p>Models are connected through &quot;pins&quot;. They are accessible through &quot;Edit Showcase Model &gt; Open Entity &gt; Edit Pins&quot;.</p>
+<p>With &quot;pins&quot;, one can add relevant information to a model or connect another model to be accessed from this model. With pins, the Creator offers the possibility to design an overview-focus kind of hierarchy where one model serves as low resolution overview for navigation and several high resolution detail models as actual learning material. This is shown in <a href="https://youtu.be/eJ12iPBakjI?list=PLnLsJCpSmHCUUHcXpfS0quV_wdfkYei4v&amp;t=42">this video <img src="images/icons/extlink.png" width="15"></a>. Pins are part of a model and only accessible through &quot;Edit Showcase Model &gt; Select Model &gt; Open Entity &gt; Edit Pins&quot;.</p>
+<div style="text-align:center"><img src="images/screenshots/06_Pins_02_Overview_Nav.JPG" width="50%"></div>
+<h2 id="create-pins">Create Pins</h2>
+<p>Simply create a pin by clicking on the &quot;Create New Pin&quot; button at the &quot;Edit Pins&quot; panel of an opened model.
+By doing so, the Creator spawns a 3D pin in the model itself, seen on the left side of the image below. The Creator also alows the user to modify the pins metadata.</p>
+<div style="text-align:center"><img src="images/screenshots/06_Pins_03_CreatePin.JPG" width="60%"></div>
+<h2 id="pin-placement">Pin Placement</h2>
+<p>To properly place a pin in the model, one can either use the experimental scaling and translation dropdowns beneath the metadata in the &quot;Edit Pin&quot; section or use Unitys scene view. In the scene view, one can place a pin the same way a <a href="Edit-Showcase-Models#transform-models">model is placed</a>.</p>
+<h2 id="connect-other-models">Connect other Models</h2>
+<p>Pins can also contain a connection or reference to another model which, by this, can be accessed through the original model. To connect a model, simply navigate to the button &quot;Connect Model&quot; in the &quot;Connect another Model&quot; section.</p>
+<div style="text-align:center"><img src="images/screenshots/06_Pins_04_ConnectModel.JPG" width="50%"></div>
+<p>The Creator changes its appearance. The metadata is now taken from the pin itself and can not be changed directly. Furthermore, a drop-down appears at which one can choose a model which should be accessed through the pin.
+It is mandatory to save the selected connection by pressing the &quot;Save&quot; button next to the drop-down.
+The button &quot;Go to&quot; will load the connected model to work on it. The toggle &quot;Show Info&quot; determines if a pin with a connection should show the name and description of the connected model when a user tabs on the pin at runtime. If toggled off, the MARBLE Player will immediately open the connected model rather than showing its information first when the user tabs the pin at runtime.</p>
+<div style="text-align:center"><img src="images/screenshots/06_Pins_04_ConnectModel_Connected.JPG" width="60%"></div>
 <h1 id="faq">FAQ</h1>
 <h2 id="description-of-pin-will-not-apply">Description of Pin will not apply</h2>
-<p>If you enter something into the &quot;Model Description&quot; area and it disappears when pressing &quot;Save Description&quot;, close the Creator (right click on the &quot;MARBLE Creator&quot; tab and select &quot;Close Tab&quot;) let unity run once and then reopen the Creator (MARBLE Creator &gt; Windows &gt; Creator).</p>
+<p>If you enter something into the &quot;Model Description&quot; area, and it disappears when pressing &quot;Save Description&quot;, close the Creator (right-click on the &quot;MARBLE Creator&quot; tab and select &quot;Close Tab&quot;) let unity run once and then reopen the Creator (MARBLE Creator &gt; Windows &gt; Creator).</p>
 <h2 id="empty-pin-descriptions-at-runtime">Empty Pin Descriptions at Runtime</h2>
 <p>If your description of a connected model will not appear at runtime (see image below), consider to open the root model in which the model is connected and update its pins. Navigate to &quot;Edit Showcase Model &gt; Open Entity &gt; Edit Pins&quot; and click &quot;Update Prefab&quot;.</p>
 <div style="text-align:center"><img src="images/screenshots/06_Pins_EmptyDescriptionAtRuntime.JPG" width="30%"></div>
 <p>To make sure that the description is set correctly, select the GameObject of the pin in the &quot;Hierarchy&quot; panel and check the &quot;Infotext&quot; entry at the &quot;Popup Data_Module (Script)&quot; component:</p>
 <div style="text-align:center"><img src="images/screenshots/06_Pins_01_EmptyDescriptionAtRuntime_.JPG" width="60%"></div>
 <p><br><img src="images/icons/Warning_Texture.png" width="10"> Do not change this entry directly. This can cause the loss of data. Rather restart unity.</p>
+<h1>What's Next?</h1>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=eJ12iPBakjI&amp;list=PLnLsJCpSmHCUUHcXpfS0quV_wdfkYei4v&amp;index=8">Watch the related video <img src="images/icons/extlink.png" width="15"></a></li>
+</ul>
 
 </article>
               

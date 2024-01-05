@@ -54,6 +54,19 @@
         "InvalidFileLink"
       ],
       "type": "Conceptual",
+      "source_relative_path": "wiki/Authority-&-Rights.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Authority-&-Rights.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
       "source_relative_path": "wiki/Concept-&-Architecture.md",
       "output": {
         ".html": {
@@ -226,6 +239,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "wiki/Quick-Fix-&-Workarounds.md",
       "output": {
@@ -236,11 +252,37 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Runtime-Control.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Runtime-Control.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "wiki/Tool-Databases.md",
       "output": {
         ".html": {
           "relative_path": "wiki/Tool-Databases.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "wiki/User-Management.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/User-Management.html"
         }
       },
       "version": ""
