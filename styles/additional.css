@@ -1,0 +1,37 @@
+.hfubanner {
+	/* display: grid; */
+	text-align: center;
+	font-weight: bold;
+	font-size: 25pt;
+	/* gap: 10px 0px; */
+	grid-auto-flow: row;
+	background-color: var(--footer-bg-color);
+	padding-top: 35px;
+	padding-bottom: 1px;
+	box-shadow: 0px 5px 10px 1px black;
+	margin-top: 25pt;
+	line-height: 1.5;
+}
+
+
+h1:first-child
+{
+	margin-block-start = 0em;
+}
+
+h2
+{
+	margin-block-start: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .hfubanner h2 {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hfubanner h2 {
+        font-size: 21px;
+    }
+}
