@@ -230,10 +230,10 @@
         "InvalidFileLink"
       ],
       "type": "Conceptual",
-      "source_relative_path": "wiki/Pins,-Details-&-Connections.md",
+      "source_relative_path": "wiki/Pins-&-Details.md",
       "output": {
         ".html": {
-          "relative_path": "wiki/Pins,-Details-&-Connections.html"
+          "relative_path": "wiki/Pins-&-Details.html"
         }
       },
       "version": ""
