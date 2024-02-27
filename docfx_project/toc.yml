@@ -1,5 +1,4 @@
 - name: About MARBLE
-  items:
 - name: Home
   href: wiki/Home.md
 - name: Concept
@@ -7,7 +6,6 @@
 - name: Videos
   href: wiki/Videos.md   
 - name: How to MARBLE
-  items:
 - name: Install & Setup
   href: wiki/Install-&-Setup.md
 - name: Getting Started
@@ -34,10 +32,8 @@
   href: wiki/Authority-&-Rights.md  
 - name: User Management
   href: wiki/User-Management.md    
-
 - name: Runtime Control 
   url: wiki/Runtime-Control.md#runtime-control
-  items:
 - name: Session Management 
   href: wiki/Runtime-Control.md#session-management
 - name: State Management 
@@ -50,9 +46,7 @@
   href: wiki/Runtime-Control.md#user-text-overlays
 - name: Config Session
   href: wiki/Runtime-Control.md#config-session  
-  
 - name: Further Resources
-  items:
 - name: Further Notes
   href: wiki/Further-Notes.md
 - name: Quick Fixes & Workarounds
