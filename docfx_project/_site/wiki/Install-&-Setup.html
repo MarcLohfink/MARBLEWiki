@@ -124,7 +124,7 @@
                     <article class="content wrap" id="_content" data-uid="">
 <h1>Install & Setup</h1>
 
-<p>MARBLE and the current version are experimental research versions. There is no guarantee that they will properly work and may cause a lot of troubleshooting to get it to work. MARBLE depends on a lot of settings, plugins and third party libraries. The following guide will lead you through the most important installation steps. The core of the MARBLE app is the current package »<em>marble_mordor_1.0.0</em>« which you have to <a href="mailto:marc-alexander.lohfink@hfu.eu">request from the author</a>.
+<p>MARBLE and the current version are experimental research versions. There is no guarantee that they will properly work and may cause a lot of troubleshooting to get it to work. MARBLE depends on a lot of settings, plugins and third party libraries. The following guide will lead you through the most important installation steps. The core of the MARBLE app is the current package »<em>marble_mordor_1.0.1</em>« which you have to <a href="mailto:marc-alexander.lohfink@hfu.eu">request from the author</a>.»<em>marble_isengard_1.0.1</em>« is the slim version of »<em>marble_mordor_1.0.1</em>«.
 If you have access to the unity package, follow this guide (chronologically) to run MARBLE on your machine.</p>
 <h1 id="visual-studio">Visual Studio</h1>
 <p>To properly deploy new app versions, you need to follow the instructions from: <a href="https://learn.microsoft.com/en-us/windows/mixed-reality/develop/install-the-tools#installation-checklist">Microsoft Learn - Mixed Reality</a>.</p>
@@ -164,41 +164,47 @@ If you have access to the unity package, follow this guide (chronologically) to 
 <p>You will probably have to set up MRTK after adding the packages. Use the following options:</p>
 <ul>
 <li>Unity OpenXR plugin (recommended)</li>
-<li>Next resolve all problems. As the &quot;Interaction Profile&quot; select &quot;Eye Gaze Interaction Profile&quot; and &quot;Microsoft Hand Interaction Profile&quot;.</li>
-<li>Click &quot;Apply Settings&quot; and then &quot;Next&quot;</li>
-<li>Make sure everything is selected. Click &quot;Apply&quot; and with this restart the editor.</li>
-<li>Head to Mixed Reality &gt; Toolkit &gt; Utilities &gt; Configure Project for MRTK to reopen the MRTK setup window</li>
+<li>Next resolve all problems. As the »Interaction Profile« select »Eye Gaze Interaction Profile« and »Microsoft Hand Interaction Profile«.</li>
+<li>Click &quot;Apply Settings&quot; and then »Next«</li>
+<li>Make sure everything is selected. Click &quot;Apply« and with this restart the editor.</li>
+<li>Head to »Mixed Reality &gt; Toolkit &gt; Utilities &gt; Configure Project for MRTK« to reopen the MRTK setup window</li>
 <li>Import the TMP Essentials</li>
 <li>Got it, next</li>
 <li>Done</li>
 </ul>
-<h2 id="mirror-api">Mirror API</h2>
-<p>MARBLE uses the <a href="https://mirror-networking.com/">Mirror-API</a>. It uses the 57.0.0 version.</p>
 <h2 id="build-settings">Build Settings</h2>
 <p>The build settings are only mandatory if you want to build new app versions. If you just want to run MARBLE as Creator, skip this part.
-Head to File &gt; Build Settings
-Make user that your target platform is &quot;Universal Windows Platform&quot;.</p>
+<br> Otherwise: Head to »File &gt; Build Settings«
+Make user that your target platform is »Universal Windows Platform«.</p>
 <ul>
 <li>Architecture: ARM64</li>
 <li>Build Type: D3D Project</li>
 <li>Target SDK Version: 10.0.22621.0</li>
 <li>Minimum Platform Version: 10.0.10240.0</li>
 </ul>
+<h2 id="marble-package">MARBLE Package</h2>
+<p>Import the Creator (»<em>marble_mordor_1.0.1</em>«) by heading to »Assets &gt; Import &gt; Custom Package« and choose the latest MARBLE package. In the popup hit »All« and »Import«. This will take some time (~5-10 min). This will throw a lot of errors. Head to the Console and hit »Clear«. Now, all errors should be cleared. If this is not the case, you have done something wrong. Either try to solve the error or start all over again.</p>
+<h2 id="mirror-api">Mirror API</h2>
+<p>MARBLE uses the <a href="https://mirror-networking.com/">Mirror-API</a>. It uses the 57.0.0 version. It should be installed with the current package »<em>marble_mordor_1.0.1</em>«.</p>
 <h2 id="scene">Scene</h2>
-<p>The main scene of MARBLE is the &quot;HoloLens2Setup&quot; scene. Make sure that this scene is the first scene executed (File &gt; Build Settings &gt; Scenes in Build).
+<p>The main scene of MARBLE is the &quot;HoloLens2Setup« scene. Make sure that this scene is the first scene executed (File &gt; Build Settings &gt; Scenes in Build).
 You need at least the following three scenes at their indices:</p>
 <ul>
 <li>Scenes/Setup at 1,</li>
 <li>Scenes/ShowcaseRoom/ShowcaseRoom at 3 and</li>
 <li>Scenes/ShowcaseRoom/MainMenu_NoUpdater at 8.</li>
+<li>(optional) Scenes/Studies/Tutorial_Focusgroup at 4.</li>
 </ul>
+<p>Open the scene &quot;HoloLens2Setup&quot; before starting the server.</p>
 <h2 id="tags--layers">Tags &amp; Layers</h2>
-<p>As Unity does not export tags and layers, you have to add the following order of tags and layers. Therefore, head to Edit &gt; Project Settings &gt; Tags and Layers.
-Tags:</p>
+<p>As Unity does not export tags and layers, you have to add the following order of tags and layers. Therefore, head to »Edit &gt; Project Settings &gt; Tags and Layers«.
+<br><br>Tags:</p>
 <ul>
 <li>DirectionalLight</li>
-<li>DirectionalLightReceiver
-Layers:</li>
+<li>DirectionalLightReceiver</li>
+</ul>
+<p>Layers:</p>
+<ul>
 <li>Default</li>
 <li>TransparentFX</li>
 <li>Ignore Raycast</li>
