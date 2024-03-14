@@ -1,0 +1,282 @@
+{
+  "source_base_path": "C:/Users/Marc/Git/MARBLEWiki/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "templates/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "templates/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Authority-&-Rights.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Authority-&-Rights.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Concept-&-Architecture.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Concept-&-Architecture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Concept.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Concept.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Configs-And-Effects.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Configs-And-Effects.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Creator-Overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Creator-Overview.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Creator-Usage.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Creator-Usage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Edit-Showcase-Database.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Edit-Showcase-Database.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Edit-Showcase-Models.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Edit-Showcase-Models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Further-Notes.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Further-Notes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Getting-Started.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Getting-Started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Home.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Home.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Import-Models.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Import-Models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Install-&-Setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Install-&-Setup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Known-Errors.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Known-Errors.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/MARBLE-Projects.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/MARBLE-Projects.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Pins-&-Details.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Pins-&-Details.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Quick-Fix-&-Workarounds.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Quick-Fix-&-Workarounds.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Runtime-Control.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Runtime-Control.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Tool-Databases.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Tool-Databases.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/User-Management.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/User-Management.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Videos.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Videos.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/_Footer.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/_Footer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/_Sidebar.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/_Sidebar.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
